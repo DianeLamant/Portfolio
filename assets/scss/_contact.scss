@@ -1,0 +1,66 @@
+#contact {
+    padding-top: 80px;
+}
+
+.info {
+    @include display-flex;
+    @include justify-center;
+    @include align-items;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], #subject {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 0.8em;
+}
+
+#formulaire textarea #subject {
+    $body-font-family: 'PT Sans', sans-serif;
+
+}
+
+input[type=submit] {
+    background-color: #9575cd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 0.8em;
+}
+
+input[type=submit]:hover {
+    background-color: #65499c;
+}
+
+.formcontainer {
+    border-radius: 5px;
+    border: 1px solid #505050;
+    padding: 10px;
+    width: 300px;
+}
+
+.col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.rowform:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.info p {
+  font-size: 1em;
+}

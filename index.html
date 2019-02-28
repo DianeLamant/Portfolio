@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/script.js" defer></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <title>Diane Lamant</title>
+</head>
+
+<body>
+  <!--Début bannière-->
+  <header id="banniere">
+    <div id="langues">
+      <button onclick="setLanguage('fr')" class="button_lang">Francais</button>
+      <button onclick="setLanguage('en')" class="button_lang">English</button>
+    </div>
+
+    <h1 class="fl-fade-in">Diane Lamant</h1>
+    <h2 class="fl-fade-in fr">Future développeuse web</h2>
+    <h2 class="fl-fade-in en">Futur web developper</h2>
+  </header>
+  <!--Fin bannière-->
+
+  <!--Début menu-->
+  <div id="menu">
+    <label for="toggle"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="toggle" />
+    <ul class="onglets">
+      <li>
+        <a href="#apropos">
+          <span class="fr">À propos</span>
+          <span class="en">About</span>
+        </a>
+      </li>
+      <li>
+        <a href="#projets">
+          <span class="fr">Projets</span>
+          <span class="en">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="#competences">
+          <span class="fr">Compétences</span>
+          <span class="en">Skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <span class="fr">Contact</span>
+          <span class="en">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!--Fin menu-->
+  <div id="contentcontainer">
+    <!--Début A propos-->
+    <div id="apropos">
+      <p class="fr">A propos en français</p>
+      <p class="en">About in english</p>
+    </div>
+    <!--Fin A propos-->
+
+    <!--Début Projets-->
+    <section id="projets">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a data-fancybox data-type="iframe" data-src="../crying-baby/src/main.html" href="javascript:;">
+              <img src="./assets/img/cryingbaby.png" class="d-block w-100" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a data-fancybox data-type="iframe" data-src="../tic-tac-toe/index.html" href="javascript:;">
+              <img src="./assets/img/tictactoe.png" class="d-block w-100" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a data-fancybox data-type="iframe" data-src="../sweaty-promo-ui/index.html" href="javascript:;">
+              <img src="./assets/img/sweatypromo.png" class="d-block w-100" alt="...">
+            </a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </section>
+    <!--Fin Projets-->
+
+    <!--Début Compétences-->
+    <div id="competences">
+      <h3 class="fr">Mes compétences :</h3>
+      <h3 class="en">My Skills :</h3>
+      <div class="row">
+
+        <div class="column">
+          <p><i class="fab fa-html5"></i> <b>HTML</b></p>
+          <div class="bar-wrap" onmouseover="animProgBar()"><span class="bar-fill progHTML"></span></div>
+          <p><i class="fab fa-css3-alt"></i> <b>CSS</b></p>
+          <div class="bar-wrap" onmouseover="animProgBar()"><span class="bar-fill progCSS"></span></div>
+        </div>
+
+        <div class="column">
+          <p><i class="fab fa-js-square"></i> <b>JAVASCRIPT</b></p>
+          <div class="bar-wrap" onmouseover="animProgBar()"><span class="bar-fill progJS"></span></div>
+          <p><i class="fab fa-php"></i> <b>PHP</b></p>
+          <div class="bar-wrap" onmouseover="animProgBar()"><span class="bar-fill progPHP"></span></div>
+        </div>
+
+      </div>
+    </div>
+    <!--Fin Compétences-->
+    <!-- Début Contact -->
+    <section id="contact">
+      <h3 class="fr">Me contacter :</h3>
+      <h3 class="en">To contact me :</h3>
+
+      <div id="formulaire" class="row">
+        <div class="formcontainer column">
+          <form action="">
+
+            <div class="rowform">
+              <div class="col-75">
+                <input type="text" id="fname" class="fr" placeholder="Votre nom..">
+                <input type="text" id="fname" class="en" placeholder="Your name..">
+              </div>
+            </div>
+
+            <div class="rowform">
+              <div class="col-75">
+                <input type="text" id="lname" class="fr" placeholder="Votre e-mail..">
+                <input type="text" id="lname" class="en" placeholder="Your e-mail..">
+              </div>
+            </div>
+
+            <div class="rowform">
+              <div class="col-75">
+                <textarea id="subject" class="fr" placeholder="Votre message.."></textarea>
+                <textarea id="subject" class="en" placeholder="Your message.."></textarea>
+              </div>
+            </div>
+
+            <div class="rowform" style="padding: 5px 0 7px 0;">
+              <input type="submit" class="fr" value="Envoyer">
+              <input type="submit" class="en" value="Submit">
+            </div>
+
+          </form>
+        </div>
+
+        <div class="column info">
+          <div>
+            <p><i class="fas fa-map-marker-alt"></i> Grenoble</p>
+            <p><i class="fas fa-phone"></i> 06 85 36 73 59</p>
+            <p><i class="fas fa-envelope"></i> diane.lamant.simplon@gmail.com</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!--Fin Contat-->
+  </div>
+
+  <footer id="">
+    <a href="#" class="fr">Haut de page</a>
+    <a href="#" class="en">Top of the page</a>
+  </footer>
+
+</body>
+
+</html>

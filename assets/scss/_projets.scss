@@ -1,0 +1,16 @@
+#projets {
+    @include display-flex;
+    @include flexwrap-projets;
+    padding-top: 80px;
+}
+
+.fancybox-slide {
+    padding: 0;
+    width  : 100%;
+    height : 100%;
+}
+
+.fancybox-infobar, .fancybox-toolbar, .fancybox-caption, .fancybox-navigation .fancybox-button-button--close {
+    opacity: 1;
+    visibility: visible;
+}

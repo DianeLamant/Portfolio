@@ -1,0 +1,53 @@
+#contentcontainer {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: $body-font-family;
+    background-color: $background-color;
+    color: rgb(230, 227, 227);
+    margin: 0;
+
+    h1 {
+        font-size: 3.2em;
+        color: $dark-purple-color;
+        text-shadow: $text-shadow;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2.2em;
+        color: $purple-color;
+        text-shadow: $text-shadow;
+        text-align: center;
+    }
+
+    h3 {
+        font-family: $title-font-family;
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+#apropos {
+    padding-top: 46px;
+
+    p {
+        font-size: 1.7em;
+        text-align: center;
+    }
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+
+    a {
+        color: $dark-purple-color;
+    }
+}

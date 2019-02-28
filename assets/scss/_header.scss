@@ -1,0 +1,60 @@
+#banniere {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    height: auto;
+    padding: 3% 0px 5% 0px;
+}
+
+.fl-fade-in {
+    @include fadein3;
+}
+
+@keyframes fl-fade-in {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+@-webkit-keyframes fl-fade-in {
+    0% { 
+        opacity: 0; 
+    }100% { 
+        opacity: 1; 
+    }
+}
+@-moz-keyframes fl-fade-in {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+
+.hidden {
+    display: none !important;
+  }
+
+.button_lang {
+    font-family: $body-font-family;
+    background-color: #8e5a74;
+    color: #FFF;
+    font-size: 1em;
+    padding: 8px 20px;
+    border-color: #8e5a74;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button_lang:hover,
+.current_lang {
+    background-color: #a5738c;
+    border-color: #a5738c;
+}
+
+#langues {
+    text-align: right;
+    padding: 0px 5% 0px 0px;
+}

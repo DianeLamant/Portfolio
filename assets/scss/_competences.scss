@@ -1,0 +1,67 @@
+#competences {
+    padding-top: 80px;
+}
+
+.row {
+    display: flex;
+  }
+
+.column {
+    @include container-full;
+    padding: 0 7% 0 7%;
+  }
+
+.bar-wrap {
+    @include progressbar-border;
+    background-color: rgba(167, 144, 144, 0.28);
+    border: 1px solid rgba(126, 117, 126, 0.8);  
+}
+
+.bar-fill {
+    @include progressbar-border;
+    @include progressbar-animation;
+    background-color: #9575cd;
+    display: block;
+    height: 15px;
+
+}
+
+.progHTML {
+    width: 40%;
+}
+
+.progCSS {
+    width: 30%;
+}
+
+.progJS {
+    width: 10%;
+}
+
+.progPHP {
+    width: 0%;
+}
+
+@keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
+
+@-moz-keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
+
+@-o-keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
