@@ -28,7 +28,7 @@ input[type=text], #subject {
 }
 
 input[type=submit] {
-    background-color: #9575cd;
+    background-color: #65499c;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -39,7 +39,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #65499c;
+    background-color: #9575cd;
 }
 
 .formcontainer {
@@ -53,6 +53,10 @@ input[type=submit]:hover {
     float: left;
     width: 100%;
     margin-top: 6px;
+}
+
+.btnSubmit {
+    padding: 5px 0 7px 0;
 }
 
 .rowform:after {

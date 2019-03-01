@@ -25,10 +25,10 @@
 <body>
   <!--Début bannière-->
   <header id="banniere">
-    <div id="langues">
-      <button onclick="setLanguage('fr')" class="button_lang">Francais</button>
-      <button onclick="setLanguage('en')" class="button_lang">English</button>
-    </div>
+    <!-- <div id="langues">
+      <span onclick="setLanguage('fr')" class="button_lang">Francais</span>
+      <span onclick="setLanguage('en')" class="button_lang">English</span>
+    </div> -->
 
     <h1 class="fl-fade-in">Diane Lamant</h1>
     <h2 class="fl-fade-in fr">Future développeuse web</h2>
@@ -37,36 +37,49 @@
   <!--Fin bannière-->
 
   <!--Début menu-->
-  <div id="menu">
-    <label for="toggle"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="toggle" />
-    <ul class="onglets">
-      <li>
-        <a href="#apropos">
-          <span class="fr">À propos</span>
-          <span class="en">About</span>
-        </a>
-      </li>
-      <li>
-        <a href="#projets">
-          <span class="fr">Projets</span>
-          <span class="en">Projects</span>
-        </a>
-      </li>
-      <li>
-        <a href="#competences">
-          <span class="fr">Compétences</span>
-          <span class="en">Skills</span>
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          <span class="fr">Contact</span>
-          <span class="en">Contact</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- <div class="d-flex flex-fill justify-content-start"> -->
+    <!--spacer-->
+    <!-- </div> -->
+
+    <div class="collapse navbar-collapse justify-content-center" id="">
+      <ul class="navbar-nav nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="#apropos">
+            <span class="fr">À propos</span>
+            <span class="en">About</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projets">
+            <span class="fr">Projets</span>
+            <span class="en">Projects</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#competences">
+            <span class="fr">Compétences</span>
+            <span class="en">Skills</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="navbar-text langues">
+        <span onclick="setLanguage('fr')" class="button_lang">Francais</span>
+        <span onclick="setLanguage('en')" class="button_lang">English</span>
+      </div>
+    </div>
+  </nav>
+
   <!--Fin menu-->
   <div id="contentcontainer">
     <!--Début A propos-->
@@ -78,6 +91,8 @@
 
     <!--Début Projets-->
     <section id="projets">
+      <h3 class="fr">Mes Projets :</h3>
+      <h3 class="en">My Projects :</h3>
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -121,14 +136,14 @@
       <h3 class="en">My Skills :</h3>
       <div class="row">
 
-        <div class="column">
+        <div class="col-md-6 col-sm-12">
           <p><i class="fab fa-html5"></i> <b>HTML</b></p>
           <div class="bar-wrap" onmouseover="animProgBar()"><span class="bar-fill progHTML"></span></div>
           <p><i class="fab fa-css3-alt"></i> <b>CSS</b></p>
           <div class="bar-wrap" onmouseover="animProgBar()"><span class="bar-fill progCSS"></span></div>
         </div>
 
-        <div class="column">
+        <div class="col-md-6 col-sm-12">
           <p><i class="fab fa-js-square"></i> <b>JAVASCRIPT</b></p>
           <div class="bar-wrap" onmouseover="animProgBar()"><span class="bar-fill progJS"></span></div>
           <p><i class="fab fa-php"></i> <b>PHP</b></p>
@@ -144,7 +159,7 @@
       <h3 class="en">To contact me :</h3>
 
       <div id="formulaire" class="row">
-        <div class="formcontainer column">
+        <div class="formcontainer col-sm-12 col-md-6">
           <form action="">
 
             <div class="rowform">
@@ -168,7 +183,7 @@
               </div>
             </div>
 
-            <div class="rowform" style="padding: 5px 0 7px 0;">
+            <div class="rowform btnSubmit">
               <input type="submit" class="fr" value="Envoyer">
               <input type="submit" class="en" value="Submit">
             </div>
@@ -176,7 +191,7 @@
           </form>
         </div>
 
-        <div class="column info">
+        <div class="col-sm-12 col-md-6 info">
           <div>
             <p><i class="fas fa-map-marker-alt"></i> Grenoble</p>
             <p><i class="fas fa-phone"></i> 06 85 36 73 59</p>
@@ -186,7 +201,7 @@
       </div>
   </div>
   </section>
-  <!--Fin Contat-->
+  <!--Fin Contact-->
   </div>
 
   <footer id="">

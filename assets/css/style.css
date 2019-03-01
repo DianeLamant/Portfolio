@@ -8,7 +8,7 @@
 /* line 7, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_squelette.scss */
 body {
   font-family: "PT Sans", sans-serif;
-  background-color: #373535;
+  background-color: #222;
   color: #e6e3e3;
   margin: 0;
 }
@@ -42,7 +42,7 @@ body p {
 
 /* line 37, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_squelette.scss */
 #apropos {
-  padding-top: 46px;
+  padding-top: 80px;
 }
 
 /* line 40, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_squelette.scss */
@@ -109,56 +109,35 @@ footer a {
   display: none !important;
 }
 
-/* line 40, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_header.scss */
-.button_lang {
-  font-family: "PT Sans", sans-serif;
-  background-color: #8e5a74;
-  color: #FFF;
-  font-size: 1em;
-  padding: 8px 20px;
-  border-color: #8e5a74;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-/* line 51, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_header.scss */
-.button_lang:hover,
-.current_lang {
-  background-color: #a5738c;
-  border-color: #a5738c;
-}
-
-/* line 57, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_header.scss */
-#langues {
-  text-align: right;
-  padding: 0px 5% 0px 0px;
-}
-
 /* line 1, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
-.onglets {
-  margin: 0;
+.navbar {
   padding: 0;
+  background-color: #222 !important;
+  border-bottom: 1px solid #555;
 }
 
-/* line 5, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
-.onglets li {
+/* line 6, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.navbar ul {
+  transform: translatex(6%);
+}
+
+/* line 10, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.navbar li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-/* line 8, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
-.onglets li a {
-  color: black;
-  text-align: center;
+/* line 13, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.navbar li a {
   padding: 14px 16px;
   font-size: 1.1em;
   text-decoration: none;
   overflow: hidden;
 }
 
-/* line 17, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
-.onglets li a:hover {
+/* line 20, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.navbar li a:hover {
   animation: fl-fade-in 0.5s ease-out;
   -webkit-animation: fl-fade-in 0.5s ease-out;
   -moz-animation: fl-fade-in 0.5s ease-out;
@@ -166,29 +145,45 @@ footer a {
   color: white;
 }
 
-/* line 26, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
-#menu {
-  text-align: center;
+/* line 28, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.langues {
+  position: absolute;
+}
+
+/* line 33, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.button_lang {
+  padding: 14px 16px;
+  font-size: 1.1em;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 41, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.button_lang:hover {
+  animation: fl-fade-in 0.5s ease-out;
+  -webkit-animation: fl-fade-in 0.5s ease-out;
+  -moz-animation: fl-fade-in 0.5s ease-out;
+  background-color: #65499c;
+  color: white;
+}
+
+/* line 48, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.navbar {
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 20;
   list-style-type: none;
   background-color: #e0e0e0;
 }
 
-/* line 35, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
-#menu label {
-  margin: 0 20px 0 0;
-  font-size: 26px;
-  display: none;
-  float: right;
-}
-
-/* line 43, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
-#toggle {
-  display: none;
+/* line 57, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_menu.scss */
+.navbar-text {
+  left: 80%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* line 1, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_projets.scss */
@@ -337,7 +332,7 @@ input[type=text], #subject {
 
 /* line 30, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
 input[type=submit] {
-  background-color: #9575cd;
+  background-color: #65499c;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -349,7 +344,7 @@ input[type=submit] {
 
 /* line 41, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
 input[type=submit]:hover {
-  background-color: #65499c;
+  background-color: #9575cd;
 }
 
 /* line 45, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
@@ -368,13 +363,18 @@ input[type=submit]:hover {
 }
 
 /* line 58, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
+.btnSubmit {
+  padding: 5px 0 7px 0;
+}
+
+/* line 62, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
 .rowform:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 64, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
+/* line 68, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
 .info p {
   font-size: 1em;
 }
@@ -479,12 +479,12 @@ input[type=submit]:hover {
   }
   /* line 96, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_mediaqueries.scss */
   #menu {
-    background-color: #373535;
+    background-color: #222;
   }
   /* line 99, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_mediaqueries.scss */
   #menu label {
     display: block;
-    background-color: #373535;
+    background-color: #222;
     cursor: pointer;
     width: 100%;
     padding: 10px;
