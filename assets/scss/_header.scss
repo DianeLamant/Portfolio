@@ -1,8 +1,12 @@
 #banniere {
     background-image: url("../img/background.png");
     background-size: cover;
-    height: auto;
+    height: 400px;
     padding: 3% 0px 5% 0px;
+
+    h1 {
+        padding-top: 100px;
+    }
 }
 
 .fl-fade-in {

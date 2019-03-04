@@ -9,16 +9,18 @@ body {
     background-color: $background-color;
     color: rgb(230, 227, 227);
     margin: 0;
+    letter-spacing: 1px;
 
     h1 {
-        font-size: 3.2em;
+        font-size: 6rem;
         color: $dark-purple-color;
         text-shadow: $text-shadow;
         text-align: center;
+
     }
     
     h2 {
-        font-size: 2.2em;
+        font-size: 4rem;
         color: $purple-color;
         text-shadow: $text-shadow;
         text-align: center;
@@ -26,11 +28,11 @@ body {
 
     h3 {
         font-family: $title-font-family;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1.7rem;
     }
 }
 
@@ -38,8 +40,7 @@ body {
     padding-top: 80px;
 
     p {
-        font-size: 1.7em;
-        text-align: center;
+        font-size: 2rem;
     }
 }
 
