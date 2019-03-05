@@ -308,6 +308,25 @@ footer a {
   }
 }
 
+@keyframes zoom {
+  100% {
+    -webkit-transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes zoom {
+  100% {
+    -webkit-transform: scale(1.2);
+  }
+}
+
+/* line 85, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_competences.scss */
+.zoomTextComp {
+  -webkit-animation: zoom 0.8s linear;
+  -moz-animation: zoom 0.8s linear;
+  animation: zoom 0.8s linear;
+}
+
 /* line 1, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
 #contact {
   padding-top: 80px;
@@ -389,6 +408,32 @@ input[type=submit]:hover {
 /* line 68, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
 .info p {
   font-size: 1.7rem;
+}
+
+/* line 72, /media/diane/data/Dev/Projets/mon-portfolio/assets/scss/_contact.scss */
+.rotate {
+  -webkit-animation: rotate 0.8s linear;
+  -moz-animation: rotate 0.8s linear;
+  animation: rotate 0.8s linear;
+}
+
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 780px) {

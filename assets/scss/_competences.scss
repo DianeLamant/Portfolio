@@ -69,3 +69,21 @@
         width: 0;
     }
 }
+
+@keyframes zoom {
+    100% {
+      -webkit-transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes zoom {
+    100% {
+      -webkit-transform: scale(1.2);
+    }
+}
+
+.zoomTextComp {
+    -webkit-animation:zoom 0.8s linear;
+    -moz-animation:zoom 0.8s linear;
+    animation:zoom 0.8s linear;
+}
