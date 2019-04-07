@@ -1,54 +1,56 @@
-#contentcontainer {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body {
-    font-family: $body-font-family;
-    background-color: $background-color;
-    color: rgb(230, 227, 227);
+#body {
     margin: 0;
-    letter-spacing: 1px;
-
-    h1 {
-        font-size: 6rem;
-        color: $dark-purple-color;
-        text-shadow: $text-shadow;
-        text-align: center;
-
-    }
+    padding:0;
+    font-family: 'Lato', sans-serif;
     
-    h2 {
-        font-size: 4rem;
-        color: $purple-color;
-        text-shadow: $text-shadow;
-        text-align: center;
+    .full-layout {
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-image: url("../img/bg_typewriter.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
     }
-
-    h3 {
-        font-family: $title-font-family;
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.7rem;
-    }
-}
-
-#apropos {
-    padding-top: 80px;
-
-    p {
-        font-size: 2rem;
-    }
-}
-
-footer {
-    text-align: center;
-    padding-top: 30px;
-
-    a {
-        color: $dark-purple-color;
+    #projects, #skills, #history, #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 90%;
+            height: 80%;
+            margin: auto;
+            background-color: rgba($color: white, $alpha: 0.9);
+        }
+        .box {
+            padding: 50px;
+            .divider {
+                background: $blue;
+                height: 2px;
+                margin: auto;
+                width: 60%;
+            }
+            h1 {
+                text-transform: uppercase;
+                font-family: "Montserrat";
+                margin: 20px auto;
+                letter-spacing: 3px;
+                text-align: center;
+                font-size: 3rem;
+            }
+        }
+        &:nth-child(3) { .divider {
+            background: $blue;
+        }}
+        &:nth-child(4) {.divider {
+            background: $purple;
+        }}
+        &:nth-child(5) {.divider {
+            background: $pink;
+        }}
+        &:nth-child(6) {.divider {
+            background: $dahlia;
+        }}
     }
 }
