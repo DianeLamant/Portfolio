@@ -1,62 +1,89 @@
-.navbar {
-    padding: 0;
-    background-color: #222 !important;
-    border-bottom: 1px solid #555;
-
-    ul {
-        transform: translatex(6%);
-    }
-
-    li {
-        @include display-onglets;
-
-        a {
-            padding: 14px 16px;
-            font-size: 1.8rem;
-            text-decoration: none;
-            overflow: hidden;
+#menu {
+    .navbar {
+        z-index: 10000;
+        background: rgba(255,255,255,0.6);
+        width: auto;
+        max-width: auto;
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        border-radius: 50px;
+        padding: 0;
+        .nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 300px;
+            li {
+                .divIcon {
+                    cursor: pointer;
+                    border: 1px solid white;
+                    border-radius: 50px;
+                    width: 50px;
+                    height: 50px;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    .img_menu {
+                        height: 70%;
+                        width: 70%;
+                    }
+                    .avatar {
+                        height: 110%;
+                        width: 110%;
+                    }
+                }
+                .menu_head {
+                    background-color: $creme;
+                }
+                .menu_projects {
+                    background-color: $blue;
+                }
+                .menu_skills {
+                    background-color: $purple;
+                }
+                .menu_history {
+                    background-color: $pink;
+                }
+                .menu_contact {
+                    background-color: $dahlia;
+                }
+                .text_menu {
+                    color: white;
+                    text-align: center;
+                    display: none;
+                    position: absolute;
+                    padding: 20%;
+                    left: 90px;
+                    width:10rem;
+                    .triangle {
+                        position: absolute;
+                        left: -10px;
+                        border-top: 10px solid transparent;
+                        border-bottom: 10px solid transparent;
+                    }
+                    .arrow_head {
+                        border-right: 14px solid $creme;
+                    }
+                    .arrow_projects {
+                        border-right: 14px solid $blue;
+                    }
+                    .arrow_skills {
+                        border-right: 14px solid $purple;
+                    }
+                    .arrow_history {
+                        border-right: 14px solid $pink;
+                    }
+                    .arrow_contact {
+                        border-right: 14px solid $dahlia;
+                    }
+                }
+            }
         }
-    
-        a:hover {
-            @include fadein1;
-            border-radius: 6px;
-            background-color: #65499c;
-            color: white;
-        }
     }
-}
-
-.langues {
-    position: absolute;
-}
-
-.button_lang {
-
-    padding: 14px 16px;
-    font-size: 1.8rem;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-
-    &:hover {
-        @include fadein1;
-        border-radius: 10px;
-        background-color: rgb(202, 105, 202);
-        color: white;
-    }
-}
-
-.navbar {
-    position: -webkit-sticky;  /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    list-style-type: none;
-    background-color: $grey-color;
-}
-
-.navbar-text {
-    left: 80%;
-    padding-top: 0;
-    padding-bottom: 0;
 }

@@ -1,0 +1,55 @@
+#head {
+    .transparente {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .div_avatar {
+        z-index: 10;
+        position: absolute;
+        left: 67%;
+        top: 50%;
+        width: 22vh;
+        height: 22vh;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: white;
+
+        .avatar {
+            background-color: #d5e6eb;
+            border-radius: 50%;
+            width: 94%;
+            margin: 3%;
+        }
+    }
+
+    .fdBlanc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        top: 60vh;
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        text-align: center;
+        background-color: #fff;
+        color: #000;
+        /* the magic property */
+        mix-blend-mode: screen;
+        h1 {
+            padding-top: 6vh;
+            font-size: 4em;
+        }
+        h3 {
+            padding-bottom: 6vh;
+            font-size: 2.5em;
+        }
+        .transparent-text{
+            font-weight: 700;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            font-weight: bold;
+          }
+    }
+}

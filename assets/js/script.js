@@ -1,74 +1,35 @@
-// Langues
+// let keyboard = "assets/img/002-keyboard-1.svg";
+// let computer = "assets/img/003-monitor.svg";
+// let time = "assets/img/005-rewind-time.svg"; 
+// let phone = "assets/img/006-smartphone.svg";
 
-function showLanguage(language) {
-    document.querySelectorAll('.' + language).forEach(function (element) {
-        element.classList.remove('hidden');
+// let iconesMenu = [keyboard, computer, time, phone];
+// let divIcones = document.querySelectorAll(".divIcon");
+
+// divIcones.forEach((element, index) => {
+//     var svg = document.createElementNS("http://www.w3.org/2000/svg",'svg');
+//     svg.src = iconesMenu[index];
+//     element.appendChild(svg).classList.add("img_menu");
+//     var monSVG = document.querySelectorAll(".img_menu");
+//     console.log(monSVG);
+    
+//     monSVG[index].appendChild(keyboard);
+    
+// });
+
+
+
+let imgMenu = document.querySelectorAll(".img_menu");
+let textMenu = document.querySelectorAll(".text_menu");
+
+
+imgMenu.forEach((element, index) => {
+    element.addEventListener("mouseover", function() {   
+        textMenu[index].style.display = "block";
+        textMenu[index].classList.add("slideInRight");
     });
-}
-
-function hideLanguage(language) {
-    document.querySelectorAll('.' + language).forEach(function (element) {
-        element.classList.add('hidden');
+    element.addEventListener("mouseout", function() {   
+        textMenu[index].style.display = "none";
+        textMenu[index].classList.remove("slideInRight");
     });
-}
-
-function setLanguage(language) {
-    if (language == 'fr') {
-        showLanguage('fr');
-        hideLanguage('en');
-    } else {
-        showLanguage('en');
-        hideLanguage('fr');
-    }
-}
-setLanguage('fr');
-
-// Progress bar 
-
-function animProgBar() {
-    document.getElementsByClassName("progHTML").style.width = '0;';
-}
-
-// Anim icones
-
-let iconesCtc = document.getElementsByClassName("fas");
-
-for (let eachIcones of iconesCtc) {
-
-    eachIcones.addEventListener("mouseenter", function (event) {
-
-        event.target.classList.add("rotate");
-        setTimeout(function () {
-            event.target.classList.remove("rotate");
-        }, 800);
-    })
-}
-
-let iconesCpt = document.getElementsByClassName("fab");
-
-for (let eachIcones of iconesCpt) {
-
-    eachIcones.addEventListener("mouseenter", function (event) {
-
-        event.target.classList.add("rotate");
-        setTimeout(function () {
-            event.target.classList.remove("rotate");
-        }, 800);
-    })
-}
-
-let textCpt = document.getElementsByClassName("compText");
-
-for (let eachTxt of textCpt) {
-
-    eachTxt.addEventListener("mouseenter", function (event) {
-
-        console.log(eachTxt);
-
-
-        event.target.classList.add("pulse");
-        setTimeout(function () {
-            event.target.classList.remove("pulse");
-        }, 1000);
-    })
-}
+});
