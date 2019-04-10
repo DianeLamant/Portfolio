@@ -1,35 +1,62 @@
-// let keyboard = "assets/img/002-keyboard-1.svg";
-// let computer = "assets/img/003-monitor.svg";
-// let time = "assets/img/005-rewind-time.svg"; 
-// let phone = "assets/img/006-smartphone.svg";
-
-// let iconesMenu = [keyboard, computer, time, phone];
-// let divIcones = document.querySelectorAll(".divIcon");
-
-// divIcones.forEach((element, index) => {
-//     var svg = document.createElementNS("http://www.w3.org/2000/svg",'svg');
-//     svg.src = iconesMenu[index];
-//     element.appendChild(svg).classList.add("img_menu");
-//     var monSVG = document.querySelectorAll(".img_menu");
-//     console.log(monSVG);
-    
-//     monSVG[index].appendChild(keyboard);
-    
-// });
-
-
-
 let imgMenu = document.querySelectorAll(".img_menu");
 let textMenu = document.querySelectorAll(".text_menu");
 
 
 imgMenu.forEach((element, index) => {
-    element.addEventListener("mouseover", function() {   
+    element.addEventListener("mouseover", function () {
         textMenu[index].style.display = "block";
         textMenu[index].classList.add("slideInRight");
     });
-    element.addEventListener("mouseout", function() {   
+    element.addEventListener("mouseout", function () {
         textMenu[index].style.display = "none";
         textMenu[index].classList.remove("slideInRight");
     });
+});
+
+
+
+$('.spiderChart').highcharts({
+
+    chart: {
+        polar: true,
+        type: 'line',
+        style: {
+            fontFamily: "Georgia, serif", // default font
+            fontSize: '12px'
+        }
+    },
+
+    colors: ['#0067ac', '#a02842', '#007680'],
+
+    pane: {
+        size: '80%'
+    },
+
+    xAxis: {
+        categories: ["Time", "Cost Saving", "Productivity", "Reduction in Errors", "ROI", "Revenue Increase", "Payback Period"],
+        tickmarkPlacement: 'on',
+        lineWidth: 0
+    },
+
+    yAxis: {
+        gridLineInterpolation: 'polygon',
+        lineWidth: 0,
+        min: 0,
+        max: 60,
+        tickInterval: 5
+    },
+
+    tooltip: {
+        shared: true,
+        pointFormat: '<span style="color:{series.color}"> <b>{point.y:,.0f}%</b><br/>'
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    series: [{
+        data: [55, 48, 43, 39, 18, 15, 5],
+        pointPlacement: 'on'
+    }]
 });
