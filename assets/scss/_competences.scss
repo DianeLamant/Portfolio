@@ -1,0 +1,54 @@
+#skills {
+    .colonne {
+        justify-content: center;
+        display: flex;
+        height: 50vh;
+        h4 {
+            padding-right: 2rem;
+        }
+        .step {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .circleSkill {
+                width: 100px;
+                .fa-active {
+                    transition: 0.3s all ease-in; 
+                    color: $purple;
+                    &:hover {
+                        color: $purpleDark;
+                    }
+                }
+                .fa-grey {
+                    color: #bebebe;
+                }
+            }
+            .textSkill {
+                visibility: hidden;
+            }
+            .circleSkill {
+
+                &:nth-child(1) { .fa-active {
+                    color: $blue;
+                }}
+                &:nth-child(2) {.fa-active {
+                    color: $purple;
+                }}
+                &:nth-child(3) { .fa-active {
+                    color: $pink;
+                }}
+                &:nth-child(4) { .fa-active {
+                    color: $blue;
+                }}
+                &:nth-child(5) {.fa-active {
+                    color: $purple;
+                }}
+                &:nth-child(6) { .fa-active {
+                    color: $pink;
+                }}
+                
+            }
+        }
+        
+    }
+}

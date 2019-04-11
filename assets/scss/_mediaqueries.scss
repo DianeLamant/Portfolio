@@ -1,0 +1,184 @@
+@media screen and (max-width: 991px) {
+    #body {
+        #projects, #skills, #history, #contact {
+            .container {      
+                .divider {
+                    width: 80%;
+                }
+                h1 {
+                    font-size: 2rem;
+                }
+                .box {
+                    padding: 50px;
+                }
+            }
+        }
+        #head {
+            .div_avatar {
+                width: 20vh;
+                height: 20vh;
+        
+                .avatar {
+                    
+                }
+            }
+            .fdBlanc {
+    
+                h1 {
+                   
+                    font-size: 3.5em;
+                }
+                h3 {
+                    
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+    .cards {
+        .flip {
+            
+            >.front, >.back {
+            width: 90%;
+            margin: auto;
+            }
+            >.back {
+                left: 30px;
+            }
+        }            
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #body {
+        #menu {
+            .navbar {
+                background-color: transparent;
+                // left: 50%;
+                .nav {
+                    right: 5vw;
+                    // align-items: flex-end;
+                    // flex-direction: inherit;
+                    height: auto;
+                    // justify-content: center;
+                    .toggler {
+                        display: block;
+                    }
+                    li {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        .divIcon {
+                            display: none;
+                        }
+                        .text_menu {
+                            width: auto;
+                            display: block;
+                            left: 0;
+                            position: inherit;
+                            padding: 10px;
+                        }
+                        .text_home {
+                            display: none;
+                        }
+                        .arrow_up {
+                            // display: block;
+                        }
+                        .triangle {
+                            display: none;
+                        }
+                        &:nth-child(2) { 
+                            background-color: $creme;
+                        }
+                        &:nth-child(3) {
+                            background-color: $blue;
+                        }
+                        &:nth-child(4) {
+                            background-color: $purple;
+                        }
+                        &:nth-child(5) {
+                            background-color: $pink;
+                        }
+                        &:nth-child(6) {
+                            background-color: $dahlia;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cards {
+        .flip { 
+            >.front, >.back {
+            width: 100%;
+            // margin: auto;
+            }
+            >.back {
+                left: 0px;
+                .html_icon {
+                    color: $htmlLight;
+                }
+                .css_icon {
+                    color: $cssLight;
+                }
+                .bs_icon {
+                    color: $bootstrapLight;
+                }
+                .js_icon {
+                    color: $javascriptLight;
+                }
+            }
+        }            
+    }
+    #skills {
+        .colonne {
+            .step {
+                .textSkill {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 474px) {
+    #body {
+        #projects, #skills, #history, #contact {
+            .container {      
+                .title {
+                    h1 {
+                        font-size: 1.8rem;
+                    }
+                }
+                .box {
+                    padding: 50px 0;
+                }
+            }
+        }
+        #head {
+            .div_avatar {
+                width: 18vh;
+                height: 18vh;
+                left: calc(50% - 9vh);
+            }
+            .fdBlanc {
+    
+                h1 {
+                    font-size: 3em;
+                }
+                h3 {
+                    font-size: 2.2em;
+                }
+            }
+        }
+        #skills {
+            .colonne {
+                .step {
+                    .textSkill {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

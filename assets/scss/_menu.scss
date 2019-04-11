@@ -18,6 +18,8 @@
             flex-direction: column;
             height: 300px;
             li {
+                display: flex;
+                align-items: center;
                 .divIcon {
                     cursor: pointer;
                     border: 1px solid white;
@@ -53,6 +55,15 @@
                 .menu_contact {
                     background-color: $dahlia;
                 }
+                .arrow_up {
+                    display: none;
+                    color: white;
+                    text-align: center;
+                    background-color: $creme;
+                    padding: 10px;
+                    height: 100%;
+                    padding: 14.5px;
+                }
                 .text_menu {
                     color: white;
                     text-align: center;
@@ -83,7 +94,30 @@
                         border-right: 14px solid $dahlia;
                     }
                 }
+                &:nth-child(1) { .text_menu {
+                    top: 4px;
+                }}
+                &:nth-child(2) {.text_menu {
+                    top: 68px;
+                }}
+                &:nth-child(3) {.text_menu {
+                    top: 130px;
+                }}
+                &:nth-child(4) {.text_menu {
+                    top: 192px;
+                }}
+                &:nth-child(5) {.text_menu {
+                    top: 254px;
+                }}
             }
         }
     }
 }
+                        .toggler {
+                            // display: none;
+                            width: auto;
+                            color: white;
+                            padding: 1rem;
+                            border: 1px solid rgba(255,255,255,0.6);
+                            border-radius: 2px;
+                        }

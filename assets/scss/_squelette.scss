@@ -1,7 +1,7 @@
 #body {
     margin: 0;
     padding:0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Exo', sans-serif;
     
     .full-layout {
         width: 100vw;
@@ -25,25 +25,24 @@
             margin: 5% auto;
             background-color: rgba($color: white, $alpha: 0.9);
             z-index: 1;
-        }
-        .box {
-            padding: 50px;
-            .divider {
-                background: $blue;
-                height: 2px;
-                margin: auto;
-                width: 60%;
+            .title {
+                padding-top: 50px;
+                h1 {
+                    text-transform: uppercase;
+                    font-family: "Montserrat";
+                    margin: 20px auto;
+                    text-align: center;
+                    font-size: 3rem;
+                    letter-spacing: 3px;
+                }
+                .divider {
+                    height: 2px;
+                    margin: auto;
+                    width: 60%;
+                }
             }
-            .dividerbot {
-                margin-bottom: 2rem;
-            }
-            h1 {
-                text-transform: uppercase;
-                font-family: "Montserrat";
-                margin: 20px auto;
-                letter-spacing: 3px;
-                text-align: center;
-                font-size: 3rem;
+            .box {
+                padding: 50px;
             }
         }
         &:nth-child(3) { .divider {

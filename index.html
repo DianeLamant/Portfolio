@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato|Exo" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous">
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"></script>
   <script src="assets/js/script.js" defer></script>
 
@@ -25,19 +26,21 @@
   <div id="menu">
     <nav class="navbar animated fadeInLeft">
       <ul class="nav">
+        <i class="fas fa-bars fa-2x toggler"></i>
         <li><a href="#">
             <div class="divIcon menu_head">
               <img class="img_menu avatar" src="assets/img/myAvatar.png" alt="" style="padding-bottom: 4px;">
             </div>
-            <span class="text_menu menu_head animated fast" style="top: 4px;">
+            <span class="text_menu text_home menu_head animated fast">
               <div class="triangle arrow_head"></div>Diane Lamant
             </span>
+            <i class="fas fa-arrow-up arrow_up fa-lg"></i>
           </a></li>
         <li><a href="#projects">
             <div class="divIcon menu_projects">
               <img class="img_menu" src="assets/img/002-keyboard-1.svg" alt="" style="padding-bottom: 4px;">
             </div>
-            <span class="text_menu menu_projects animated fast" style="top: 68px;">
+            <span class="text_menu menu_projects animated fast">
               <div class="triangle arrow_projects"></div>Mes projets
             </span>
           </a></li>
@@ -45,7 +48,7 @@
             <div class="divIcon menu_skills">
               <img class="img_menu" src="assets/img/003-monitor.svg" alt="" style="padding-top: 4px;">
             </div>
-            <span class="text_menu menu_skills animated fast" style="top: 130px;">
+            <span class="text_menu menu_skills animated fast">
               <div class="triangle arrow_skills"></div>Mes compétences
             </span>
           </a></li>
@@ -53,7 +56,7 @@
             <div class="divIcon menu_history">
               <img class="img_menu" src="assets/img/005-rewind-time.svg" alt="" style="padding-top: 2px;">
             </div>
-            <span class="text_menu menu_history animated fast" style="top: 192px;">
+            <span class="text_menu menu_history animated fast">
               <div class="triangle arrow_history"></div>Mon parcours
             </span>
           </a></li>
@@ -61,7 +64,7 @@
             <div class="divIcon menu_contact">
               <img class="img_menu" src="assets/img/006-smartphone.svg" alt="">
             </div>
-            <span class="text_menu menu_contact animated fast" style="top: 254px;">
+            <span class="text_menu menu_contact animated fast">
               <div class="triangle arrow_contact"></div>Me contacter
             </span>
           </a></li>
@@ -82,13 +85,15 @@
 
   <section id="projects" class="full-layout">
     <div class="container">
-      <div class="box">
+      <div class="title">
         <div class="divider"></div>
         <h1>Mes projets</h1>
-        <div class="divider dividerbot"></div>
+        <div class="divider"></div>
+      </div>
+      <div class="box">
 
-        <div class="cards">
-          <div class="flip">
+        <div class="cards row">
+          <div class="flip col-12 col-lg-6">
             <div class="front" style="background-image: url(assets/img/tamagotchi.png)"></div>
             <div class="back">
               <h4 class="text-shadow">Tamagotchi</h4>
@@ -97,7 +102,7 @@
               <a data-fancybox data-type="iframe" data-src="../crying-baby/src/main.html" href="javascript:;">Jouer</a>
             </div>
           </div>
-          <div class="flip">
+          <div class="flip col-12 col-lg-6">
             <div class="front" style="background-image: url(assets/img/tictactoe.png)"></div>
             <div class="back">
               <h4 class="text-shadow">Tic Tac Toe</h4>
@@ -106,10 +111,8 @@
               <a data-fancybox data-type="iframe" data-src="../tic-tac-toe/index.html" href="javascript:;">Jouer</a>
             </div>
           </div>
-        </div>
 
-        <div class="cards">
-          <div class="flip">
+          <div class="flip col-12 col-lg-6">
             <div class="front" style="background-image: url(assets/img/maraudeur.png)"></div>
             <div class="back">
               <h4 class="text-shadow">Carte du Maraudeur</h4>
@@ -127,139 +130,104 @@
 
   <section id="skills" class="full-layout">
     <div class="container">
-      <div class="box">
+      <div class="title">
         <div class="divider"></div>
         <h1>Mes compétences</h1>
-        <div class="divider dividerbot"></div>
-
-        <div class="row">
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>HTML/CSS</h4>
-            <ul class="list-unstyled multi-steps">
-              <li><i class="fas fa-walking fa-2x"></i></li>
-              <li class="is-active"><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>SASS</h4>
-            <ul class="list-unstyled multi-steps">
-              <li><i class="fas fa-walking fa-2x"></i></li>
-              <li class="is-active"><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>Bootstrap</h4>
-            <ul class="list-unstyled multi-steps">
-              <li><i class="fas fa-walking fa-2x"></i></li>
-              <li class="is-active"><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>JavaScript</h4>
-            <ul class="list-unstyled multi-steps">
-              <li><i class="fas fa-walking fa-2x"></i></li>
-              <li class="is-active"><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>JQuery</h4>
-            <ul class="list-unstyled multi-steps">
-              <li class="is-active"><i class="fas fa-walking fa-2x"></i></li>
-              <li><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>POO</h4>
-            <ul class="list-unstyled multi-steps">
-              <li class="is-active"><i class="fas fa-walking fa-2x"></i></li>
-              <li><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>PHP</h4>
-            <ul class="list-unstyled multi-steps">
-              <li><i class="fas fa-walking fa-2x"></i></li>
-              <li class="is-active"><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>MySQL</h4>
-            <ul class="list-unstyled multi-steps">
-              <li class="is-active"><i class="fas fa-walking fa-2x"></i></li>
-              <li><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>Symfony</h4>
-            <ul class="list-unstyled multi-steps">
-              <li><i class="fas fa-walking fa-2x"></i></li>
-              <li class="is-active"><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>WordPress</h4>
-            <ul class="list-unstyled multi-steps">
-              <li><i class="fas fa-walking fa-2x"></i></li>
-              <li class="is-active"><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-          <div class="techno col-md-6 col-lg-4">
-            <h4>GIT</h4>
-            <ul class="list-unstyled multi-steps">
-              <li class="is-active"><i class="fas fa-walking fa-2x"></i></li>
-              <li><i class="fas fa-running fa-2x"></i></li>
-              <li><i class="fas fa-medal fa-2x"></i></li>
-            </ul>
-          </div>
-
-        </div>
-
+        <div class="divider"></div>
       </div>
-    </div>
+      <div class="box">
+
+        <div class="row">
+          <div class="colonne col-12 col-lg-6 ">
+            <div class="step">
+              <h4>HTML/CSS</h4>
+              <h4>SASS</h4>
+              <h4>Bootstrap</h4>
+              <h4>PHP</h4>
+              <h4>Symfony</h4>
+              <h4>MySQLi</h4>
+            </div>
+            <div class="step">
+              <div class="circleSkill skillhtml"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-grey"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-grey"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+            </div>
+            <div class="step">
+              <span class="textSkill">Intermédiaire</span>
+              <span class="textSkill">Intermédiaire</span>
+              <span class="textSkill">Intermédiaire</span>
+              <span class="textSkill">Initié</span>
+              <span class="textSkill">Intermédiaire</span>
+              <span class="textSkill">Initié</span>
+            </div>
+          </div>
+
+
+          <div class="colonne col-12 col-lg-6 ">
+
+            <div class="step">
+              <h4>JavaScript</h4>
+              <h4>JQuery</h4>
+              <h4>POO</h4>
+              <h4>WordPress</h4>
+              <h4>GIT</h4>
+            </div>
+            <div class="step">
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-grey"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-grey"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-grey"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+              <div class="circleSkill"><i class="fas fa-circle fa-fw fa-lg fa-active"></i><i class="fas fa-circle fa-fw fa-lg fa-grey"></i><i
+                  class="fas fa-circle fa-fw fa-lg fa-grey"></i></div>
+            </div>
+            <div class="step">
+              <span class="textSkill">Intermédiaire</span>
+              <span class="textSkill">Initié</span>
+              <span class="textSkill">Initié</span>
+              <span class="textSkill">Initié</span>
+              <span class="textSkill">Initié</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
   </section>
 
   <section id="history" class="full-layout">
     <div class="container">
-      <div class="box">
+      <div class="title">
         <div class="divider"></div>
         <h1>Mon parcours</h1>
-        <div class="divider dividerbot"></div>
+        <div class="divider"></div>
+      </div>
+      <div class="box">
+
+
 
 
   </section>
 
   <section id="contact" class="full-layout">
     <div class="container">
-      <div class="box">
+      <div class="title">
         <div class="divider"></div>
         <h1>Me contacter</h1>
-        <div class="divider dividerbot"></div>
+        <div class="divider"></div>
+      </div>
+      <div class="box">
       </div>
     </div>
   </section>
