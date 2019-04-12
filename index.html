@@ -26,8 +26,8 @@
   <div id="menu">
     <nav class="navbar animated fadeInLeft">
       <ul class="nav">
-        <i class="fas fa-bars fa-2x toggler"></i>
-        <li><a href="#">
+        <i id="toggler" class="fas fa-bars fa-2x toggler"></i>
+        <li><a class="link_menu" href="#">
             <div class="divIcon menu_head">
               <img class="img_menu avatar" src="assets/img/myAvatar.png" alt="" style="padding-bottom: 4px;">
             </div>
@@ -36,7 +36,7 @@
             </span>
             <i class="fas fa-arrow-up arrow_up fa-lg"></i>
           </a></li>
-        <li><a href="#projects">
+        <li><a class="link_menu" href="#projects">
             <div class="divIcon menu_projects">
               <img class="img_menu" src="assets/img/002-keyboard-1.svg" alt="" style="padding-bottom: 4px;">
             </div>
@@ -44,7 +44,7 @@
               <div class="triangle arrow_projects"></div>Mes projets
             </span>
           </a></li>
-        <li><a href="#skills">
+        <li><a class="link_menu" href="#skills">
             <div class="divIcon menu_skills">
               <img class="img_menu" src="assets/img/003-monitor.svg" alt="" style="padding-top: 4px;">
             </div>
@@ -52,7 +52,7 @@
               <div class="triangle arrow_skills"></div>Mes compétences
             </span>
           </a></li>
-        <li><a href="#history">
+        <li><a class="link_menu" href="#history">
             <div class="divIcon menu_history">
               <img class="img_menu" src="assets/img/005-rewind-time.svg" alt="" style="padding-top: 2px;">
             </div>
@@ -60,7 +60,7 @@
               <div class="triangle arrow_history"></div>Mon parcours
             </span>
           </a></li>
-        <li><a href="#contact">
+        <li><a class="link_menu" href="#contact">
             <div class="divIcon menu_contact">
               <img class="img_menu" src="assets/img/006-smartphone.svg" alt="">
             </div>
@@ -206,20 +206,6 @@
       </div>
   </section>
 
-  <section id="history" class="full-layout">
-    <div class="container">
-      <div class="title">
-        <div class="divider"></div>
-        <h1>Mon parcours</h1>
-        <div class="divider"></div>
-      </div>
-      <div class="box">
-
-
-
-
-  </section>
-
   <section id="contact" class="full-layout">
     <div class="container">
       <div class="title">
@@ -228,9 +214,59 @@
         <div class="divider"></div>
       </div>
       <div class="box">
+        <div class="history_text">
+          <p>En reconversion professionnelle je suis une formation chez Simplon.co (jusqu'à mi-juin) pour me former au
+            métier de développeuse web.</p>
+
+          <p>Basée sur la pédagogie active (Learning by doing, Learning by teaching), j'ai réalisé des projets en
+            front-end et back-end.</p>
+
+          <p>Appréciant ces deux parties du métier, je recherche actuellement un contrat pro de développeur web
+            junior full stack, pour continuer de me former et compléter mes compétences.</p>
+        </div>
+
+        <div class="row all_contacts">
+          <div class="colonne col-12 col-lg-6 ">
+            <div class="way_to_contact">
+              <!-- <img src="./assets/img/svg/003-mountains.svg" alt="">
+              <img src="./assets/img/svg/014-linkedin-2.svg" alt="">
+              <img src="./assets/img/svg/002-phone.svg" alt="">-->
+
+            </div>
+            <div class="way_to_contact">
+              <p><img src="./assets/img/svg/004-mountain.svg" alt="">
+                Grenoble</p>
+              <a href="http://www.linkedin.com/in/diane-lamant"><img src="./assets/img/svg/010-linkedin-1.svg" alt="">
+                Mon LinkedIn</a>
+              <a href="tel:+33685367359"><img src="./assets/img/svg/005-smartphone.svg" alt=""> 06 85 36 73 59</a>
+            </div>
+          </div>
+
+
+          <div class="colonne col-12 col-lg-6 ">
+
+            <div class="way_to_contact">
+              <!-- <img src="./assets/img/svg/015-black-back-closed-envelope-shape.svg" alt="">
+              <img src="./assets/img/svg/013-hired.svg" alt=""> -->
+
+
+            </div>
+            <div class="way_to_contact">
+              <a href="mailto:diane.lamant@orange.fr"><img src="./assets/img/svg/008-email.svg" alt="">
+                diane.lamant@orange.fr</a>
+              <a href="./assets/img/CV Diane LAMANT Dev Web.pdf" data-fancybox="images" data-caption="My caption">
+                <img src="./assets/img/svg/011-cv.svg" alt="">
+                Mon CV
+              </a>
+            </div>
+          </div>
+
+
+        </div>
       </div>
-    </div>
   </section>
+
+
 
 </body>
 

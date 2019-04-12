@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Exo', sans-serif; }
+  #body h4 {
+    font-size: 1.7rem; }
+  #body p {
+    font-size: 1.4rem; }
   #body .full-layout {
     width: 100vw;
     height: 100%;
@@ -30,7 +34,7 @@
           font-family: "Montserrat";
           margin: 20px auto;
           text-align: center;
-          font-size: 3rem;
+          font-size: 3.4rem;
           letter-spacing: 3px; }
         #body #projects .container .title .divider, #body #skills .container .title .divider, #body #history .container .title .divider, #body #contact .container .title .divider {
           height: 2px;
@@ -65,6 +69,14 @@
     justify-content: space-between;
     flex-direction: column;
     height: 300px; }
+    #menu .navbar .nav .toggler {
+      background: rgba(255, 255, 255, 0.6);
+      display: none;
+      color: rgba(0, 0, 0, 0.5);
+      padding: 0.7rem;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      width: 3.3rem; }
     #menu .navbar .nav li {
       display: flex;
       align-items: center; }
@@ -126,23 +138,16 @@
           border-right: 14px solid #DBB1CD; }
         #menu .navbar .nav li .text_menu .arrow_contact {
           border-right: 14px solid #EC9787; }
-      #menu .navbar .nav li:nth-child(1) .text_menu {
-        top: 4px; }
       #menu .navbar .nav li:nth-child(2) .text_menu {
-        top: 68px; }
+        top: 4px; }
       #menu .navbar .nav li:nth-child(3) .text_menu {
-        top: 130px; }
+        top: 68px; }
       #menu .navbar .nav li:nth-child(4) .text_menu {
-        top: 192px; }
+        top: 130px; }
       #menu .navbar .nav li:nth-child(5) .text_menu {
+        top: 192px; }
+      #menu .navbar .nav li:nth-child(6) .text_menu {
         top: 254px; }
-
-.toggler {
-  width: auto;
-  color: white;
-  padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 2px; }
 
 #head .transparente {
   height: 60vh;
@@ -301,6 +306,28 @@
     #skills .colonne .step .circleSkill:nth-child(6) .fa-active {
       color: #DBB1CD; }
 
+#contact .container .box .history_text p {
+  line-height: 2; }
+#contact .container .box .all_contacts {
+  justify-content: center; }
+  #contact .container .box .all_contacts .colonne {
+    justify-content: center;
+    display: flex;
+    height: 25vh; }
+    #contact .container .box .all_contacts .colonne .way_to_contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      #contact .container .box .all_contacts .colonne .way_to_contact img {
+        width: 2rem;
+        margin-right: 20px; }
+      #contact .container .box .all_contacts .colonne .way_to_contact p {
+        font-size: 1.5rem;
+        margin: 0; }
+      #contact .container .box .all_contacts .colonne .way_to_contact a {
+        text-decoration: none;
+        font-size: 1.5rem; }
+
 @media screen and (max-width: 991px) {
   #body #projects .container .divider, #body #skills .container .divider, #body #history .container .divider, #body #contact .container .divider {
     width: 80%; }
@@ -315,6 +342,8 @@
     font-size: 3.5em; }
   #body #head .fdBlanc h3 {
     font-size: 3em; }
+  #body #contact .container .box .all_contacts .colonne {
+    justify-content: initial; }
 
   .cards .flip > .front, .cards .flip > .back {
     width: 90%;
@@ -325,7 +354,6 @@
   #body #menu .navbar {
     background-color: transparent; }
     #body #menu .navbar .nav {
-      right: 5vw;
       height: auto; }
       #body #menu .navbar .nav .toggler {
         display: block; }
@@ -337,7 +365,6 @@
           display: none; }
         #body #menu .navbar .nav li .text_menu {
           width: auto;
-          display: block;
           left: 0;
           position: inherit;
           padding: 10px; }

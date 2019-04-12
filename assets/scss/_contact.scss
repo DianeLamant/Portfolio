@@ -1,0 +1,36 @@
+#contact {
+    .container {
+        .box {
+            .history_text {
+                p {
+                    line-height: 2;   
+                }
+            }
+            .all_contacts {
+                justify-content: center;
+                .colonne {
+                    justify-content: center;
+                    display: flex;
+                    height: 25vh;
+                    .way_to_contact {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        img {
+                            width: 2rem;
+                            margin-right: 20px;
+                        }
+                        p {
+                            font-size: 1.5rem;
+                            margin: 0;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

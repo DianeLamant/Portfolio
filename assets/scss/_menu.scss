@@ -17,6 +17,15 @@
             justify-content: space-between;
             flex-direction: column;
             height: 300px;
+            .toggler {
+                background: rgba(255,255,255,0.6);
+                display: none;
+                color: rgba(0,0,0,.5);
+                padding: 0.7rem;
+                border: 1px solid rgba(0,0,0,.5);
+                border-radius: 3px;
+                width: 3.3rem;
+            }
             li {
                 display: flex;
                 align-items: center;
@@ -94,30 +103,22 @@
                         border-right: 14px solid $dahlia;
                     }
                 }
-                &:nth-child(1) { .text_menu {
+                &:nth-child(2) { .text_menu {
                     top: 4px;
                 }}
-                &:nth-child(2) {.text_menu {
+                &:nth-child(3) {.text_menu {
                     top: 68px;
                 }}
-                &:nth-child(3) {.text_menu {
+                &:nth-child(4) {.text_menu {
                     top: 130px;
                 }}
-                &:nth-child(4) {.text_menu {
+                &:nth-child(5) {.text_menu {
                     top: 192px;
                 }}
-                &:nth-child(5) {.text_menu {
+                &:nth-child(6) {.text_menu {
                     top: 254px;
                 }}
             }
         }
     }
 }
-                        .toggler {
-                            // display: none;
-                            width: auto;
-                            color: white;
-                            padding: 1rem;
-                            border: 1px solid rgba(255,255,255,0.6);
-                            border-radius: 2px;
-                        }

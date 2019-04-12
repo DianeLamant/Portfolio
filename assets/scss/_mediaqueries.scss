@@ -34,6 +34,17 @@
                 }
             }
         }
+        #contact {
+            .container {
+                .box {
+                    .all_contacts {
+                        .colonne {
+                            justify-content: initial;
+                        }
+                    }
+                }
+            }
+        }
     }
     .cards {
         .flip {
@@ -56,7 +67,7 @@
                 background-color: transparent;
                 // left: 50%;
                 .nav {
-                    right: 5vw;
+                    // right: 5vw;
                     // align-items: flex-end;
                     // flex-direction: inherit;
                     height: auto;
@@ -73,7 +84,7 @@
                         }
                         .text_menu {
                             width: auto;
-                            display: block;
+                            // display: block;
                             left: 0;
                             position: inherit;
                             padding: 10px;
