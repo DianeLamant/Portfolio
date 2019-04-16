@@ -1,17 +1,13 @@
 #contact {
     .container {
         .box {
-            .history_text {
-                p {
-                    line-height: 2;   
-                }
-            }
+
             .all_contacts {
                 justify-content: center;
                 .colonne {
                     justify-content: center;
                     display: flex;
-                    height: 25vh;
+                    height: 40vh;
                     .way_to_contact {
                         display: flex;
                         flex-direction: column;
@@ -26,7 +22,7 @@
                         }
                         a {
                             text-decoration: none;
-                            font-size: 1.5rem;
+                            font-size: 1.4rem;
                         }
                     }
                 }

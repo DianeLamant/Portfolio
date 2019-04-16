@@ -2,20 +2,24 @@
   margin: 0;
   padding: 0;
   font-family: 'Exo', sans-serif; }
+  #body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("../img/bg_typewriter.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   #body h4 {
     font-size: 1.7rem; }
   #body p {
     font-size: 1.4rem; }
-  #body .full-layout {
-    width: 100vw;
-    height: 100%;
-    min-height: 100vh;
-    left: 0;
-    top: 0;
-    background-image: url("../img/bg_typewriter.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
   #body #projects, #body #skills, #body #history, #body #contact {
     display: flex;
     justify-content: center;
@@ -240,7 +244,6 @@
       left: 0px;
       width: 100%;
       height: 100%;
-      margin: auto 2px;
       transform: rotateY(-180deg); }
       .cards .flip > .back .html_icon:hover {
         color: #e34c26; }
@@ -271,6 +274,9 @@
       transform: rotateX(180deg); }
     .cards .flip.flip-vertical:hover > .back {
       transform: rotateX(0deg); }
+
+.uneclasse {
+  background-color: pink; }
 
 #skills .colonne {
   justify-content: center;
@@ -306,14 +312,12 @@
     #skills .colonne .step .circleSkill:nth-child(6) .fa-active {
       color: #DBB1CD; }
 
-#contact .container .box .history_text p {
-  line-height: 2; }
 #contact .container .box .all_contacts {
   justify-content: center; }
   #contact .container .box .all_contacts .colonne {
     justify-content: center;
     display: flex;
-    height: 25vh; }
+    height: 40vh; }
     #contact .container .box .all_contacts .colonne .way_to_contact {
       display: flex;
       flex-direction: column;
@@ -326,7 +330,7 @@
         margin: 0; }
       #contact .container .box .all_contacts .colonne .way_to_contact a {
         text-decoration: none;
-        font-size: 1.5rem; }
+        font-size: 1.4rem; }
 
 @media screen and (max-width: 991px) {
   #body #projects .container .divider, #body #skills .container .divider, #body #history .container .divider, #body #contact .container .divider {
@@ -342,14 +346,19 @@
     font-size: 3.5em; }
   #body #head .fdBlanc h3 {
     font-size: 3em; }
-  #body #contact .container .box .all_contacts .colonne {
-    justify-content: initial; }
+  #body #contact .container .box .all_contacts {
+    height: 50vh; }
+    #body #contact .container .box .all_contacts .colonne {
+      height: auto;
+      justify-content: initial; }
 
-  .cards .flip > .front, .cards .flip > .back {
-    width: 90%;
-    margin: auto; }
-  .cards .flip > .back {
-    left: 30px; } }
+  .cards .flip {
+    margin: 2rem 0rem; }
+    .cards .flip > .front, .cards .flip > .back {
+      width: 90%;
+      margin: auto; }
+    .cards .flip > .back {
+      left: 30px; } }
 @media screen and (max-width: 768px) {
   #body #menu .navbar {
     background-color: transparent; }
@@ -399,18 +408,43 @@
   #skills .colonne .step .textSkill {
     visibility: visible; } }
 @media screen and (max-width: 474px) {
+  #body .full-layout {
+    background-attachment: scroll; }
   #body #projects .container .title h1, #body #skills .container .title h1, #body #history .container .title h1, #body #contact .container .title h1 {
     font-size: 1.8rem; }
   #body #projects .container .box, #body #skills .container .box, #body #history .container .box, #body #contact .container .box {
     padding: 50px 0; }
+  #body #head .transparente {
+    height: 50vh; }
   #body #head .div_avatar {
+    top: calc(50vh - 9vh);
     width: 18vh;
     height: 18vh;
     left: calc(50% - 9vh); }
-  #body #head .fdBlanc h1 {
-    font-size: 3em; }
-  #body #head .fdBlanc h3 {
-    font-size: 2.2em; }
+  #body #head .fdBlanc {
+    height: 50vh; }
+    #body #head .fdBlanc h1 {
+      font-size: 3em;
+      padding-top: 10vh; }
+    #body #head .fdBlanc h3 {
+      font-size: 2.2em; }
+  #body #projects .cards .flip > .back {
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    transform: rotateY(0deg);
+    color: black; }
+    #body #projects .cards .flip > .back i {
+      font-size: 2em; }
+    #body #projects .cards .flip > .back a {
+      box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5); }
+  #body #projects .cards .flip h4 {
+    padding-top: 25%; }
+  #body #projects .cards .flip .text-shadow {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04); }
+  #body #projects .cards .flip:hover > .front {
+    transform: none; }
+  #body #projects .cards .flip:hover > .back {
+    transform: none; }
   #body #skills .colonne .step .textSkill {
     display: none; } }
 
