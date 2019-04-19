@@ -196,7 +196,8 @@
             .cards {
                 .flip { 
                     >.front {
-                        // transform: rotateY(180deg);
+                        filter: blur(1px);
+                        -webkit-filter: blur(1px);
                     }
                     >.back {
                         background: rgba($color: white, $alpha: 0.4);

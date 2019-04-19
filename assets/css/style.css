@@ -428,6 +428,9 @@
       padding-top: 10vh; }
     #body #head .fdBlanc h3 {
       font-size: 2.2em; }
+  #body #projects .cards .flip > .front {
+    filter: blur(1px);
+    -webkit-filter: blur(1px); }
   #body #projects .cards .flip > .back {
     background: rgba(255, 255, 255, 0.4);
     opacity: 1;
