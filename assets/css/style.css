@@ -258,6 +258,8 @@
           fill: #35bdb2; }
         .cards .flip > .back p .sassicon:hover {
           fill: #cf649a; }
+        .cards .flip > .back p .jqueryicon:hover {
+          fill: #78cff5; }
         .cards .flip > .back p .angularicon:hover {
           fill: #c3002f; }
         .cards .flip > .back p .phpicon:hover {
@@ -424,6 +426,8 @@
       fill: #38c7bb; }
     .cards .flip > .back p .sassicon {
       fill: #d576a6; }
+    .cards .flip > .back p .jqueryicon {
+      fill: #88d5f6; }
     .cards .flip > .back .html_icon {
       color: #e55734; }
     .cards .flip > .back .css_icon {
