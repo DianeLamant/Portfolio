@@ -1,0 +1,22 @@
+{
+  "name": "hard-social-network",
+  "version": "1.0.0",
+  "description": "_Projet en groupe (3 ou 4 personnes)_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/simplon-grenoble-promo-1-formateurs/hard-social-network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/simplon-grenoble-promo-1-formateurs/hard-social-network/issues"
+  },
+  "homepage": "https://gitlab.com/simplon-grenoble-promo-1-formateurs/hard-social-network#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

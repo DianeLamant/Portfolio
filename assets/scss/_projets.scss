@@ -57,17 +57,47 @@
             height: 100%;
             // margin: auto 2px;
             transform: rotateY(-180deg);
-            .html_icon:hover {
-                color: $html;
-            }
-            .css_icon:hover {
-                color: $css;
-            }
-            .bs_icon:hover {
-                color: $bootstrap;
-            }
-            .js_icon:hover {
-                color: $javascript;
+            p {
+                display: inline-flex;
+                align-items: center;
+                svg {
+                    height: 61px;
+                    width: 61px;
+                    fill: #999;
+                }
+                .m_side {
+                    margin: auto .15em;
+                }
+                .semanticuiicon:hover {
+                    fill: $semanticui;
+                }
+                .sassicon:hover {
+                    fill: $sass;
+                }
+                .angularicon:hover {
+                    fill: $angular;
+                }
+                .phpicon:hover {
+                    fill: $php;
+                }
+                .mysqlicon:hover {
+                    fill: $mysql;
+                }
+                .symfony_icon:hover {
+                    color: black;
+                }
+                .html_icon:hover {
+                    color: $html;
+                }
+                .css_icon:hover {
+                    color: $css;
+                }
+                .bs_icon:hover {
+                    color: $bootstrap;
+                }
+                .js_icon:hover {
+                    color: $javascript;
+                }
             }
             a {
                 text-decoration: none;
@@ -106,9 +136,3 @@
         }
     }  
 }
-
-.uneclasse {
-    background-color: pink;
-}
-  
-  
