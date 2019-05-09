@@ -1,0 +1,11 @@
+@mixin rotate () {
+    -webkit-animation: rotate 0.8s linear;
+    -moz-animation: rotate 0.8s linear;
+    animation: rotate 0.8s linear;
+}
+
+@mixin rotateEnv () {
+    -webkit-animation: rotateEnv 0.8s linear;
+    -moz-animation: rotateEnv 0.8s linear;
+    animation: rotateEnv 0.8s linear;
+}

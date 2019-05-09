@@ -1,6 +1,3 @@
-// const ScrollReveal = require('scrollreveal');
-// import ScrollReveal from 'scrollreveal';
-// ScrollReveal().reveal('#projects');
 
 // Effet  de scroll lors du click sur menu
 $('.link_menu').each(function (index, element) {
@@ -11,8 +8,6 @@ $('.link_menu').each(function (index, element) {
             'slow');
     });
 });
-
-
 
 let imgMenu = document.querySelectorAll(".img_menu");
 let textMenu = document.querySelectorAll(".text_menu");
@@ -27,7 +22,7 @@ toggler.addEventListener("click", function () {
             textMenu[index].classList.remove("slideInLeft");
             toggler.classList.remove("active");
         });
-        // Replis le menu lors de l'appui sur le toggler
+        // Ferme le menu lors de l'appui sur le toggler
     } else {
         textMenu.forEach((element, index) => {
             element.style.display = "block";
@@ -37,7 +32,7 @@ toggler.addEventListener("click", function () {
     };
 });
 
-// Replis le menu lorsqu'un lien est cliqué
+// Ferme le menu lorsqu'un lien est cliqué
 linkMenu.forEach((element, index) => {
     element.addEventListener("click", function () {
         textMenu.forEach((element, index) => {

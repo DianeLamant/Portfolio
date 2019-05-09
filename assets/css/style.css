@@ -251,7 +251,10 @@
         .cards .flip > .back p svg {
           height: 61px;
           width: 61px;
-          fill: #999; }
+          fill: #999;
+          transition: 0.4s; }
+        .cards .flip > .back p i {
+          transition: 0.4s; }
         .cards .flip > .back p .m_side {
           margin: auto .15em; }
         .cards .flip > .back p .semanticuiicon:hover {
@@ -344,13 +347,20 @@
       justify-content: space-around; }
       #contact .container .box .all_contacts .colonne .way_to_contact img {
         width: 2rem;
-        margin-right: 20px; }
+        margin-right: 20px;
+        -webkit-animation: rotateEnv 0.8s linear;
+        -moz-animation: rotateEnv 0.8s linear;
+        animation: rotateEnv 0.8s linear; }
+        #contact .container .box .all_contacts .colonne .way_to_contact img:hover {
+          -webkit-animation: rotate 0.8s linear;
+          -moz-animation: rotate 0.8s linear;
+          animation: rotate 0.8s linear; }
       #contact .container .box .all_contacts .colonne .way_to_contact p {
         font-size: 1.5rem;
         margin: 0; }
       #contact .container .box .all_contacts .colonne .way_to_contact a {
         text-decoration: none;
-        font-size: 1.4rem; }
+        font-size: 1.5rem; }
 
 @media screen and (max-width: 991px) {
   #body #projects .container .divider, #body #skills .container .divider, #body #history .container .divider, #body #contact .container .divider {
@@ -486,6 +496,30 @@
   #body #projects .cards .flip:hover > .back {
     transform: none; }
   #body #skills .colonne .step .textSkill {
-    display: none; } }
+    display: none; }
+  #body #contact .container .box .all_contacts .colonne .way_to_contact p {
+    font-size: 1.1rem; }
+  #body #contact .container .box .all_contacts .colonne .way_to_contact a {
+    font-size: 1.1rem; } }
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-moz-keyframes rotateEnv {
+  100% {
+    -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes rotateEnv {
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+@keyframes rotateEnv {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
 
 /*# sourceMappingURL=style.css.map */
