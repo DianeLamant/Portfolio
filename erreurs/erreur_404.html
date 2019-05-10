@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404 Not Found</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Lato|Exo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="./jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body id="body">
+
+    <section id="erreur" class="section">
+        <div class="container">
+            <button onclick="window.location.href = 'http://diane-lamant.simplon-grenoble.fr/';" class="ui inverted errorcolor labeled icon button">
+                <i class="left arrow icon"></i>
+                Retour au site
+            </button>
+            <div class="title">
+                <div class="divider dividerror"></div>
+                <h1>404 Not Found</h1>
+                <div class="divider dividerror"></div>
+            </div>
+            <div class="box">
+                <p>La page recherchée n'existe pas. Attrapez la souris pour retourner au site !</p>
+
+                <div id="game">
+                    <img id="mouse" src="../assets/img/errorImg/mouse.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ui tiny modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Bien joué !
+        </div>
+        <div class="image content">
+            <img src="../assets/img/errorImg/happycat.png">
+        </div>
+        <div class="actions">
+            <button onclick="window.location.href = 'http://diane-lamant.simplon-grenoble.fr/';" class="ui inverted errorcolor labeled icon button">
+                <i class="left arrow icon"></i>
+                Retour au site
+            </button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

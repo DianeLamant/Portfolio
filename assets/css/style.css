@@ -20,39 +20,42 @@
     font-size: 1.7rem; }
   #body p {
     font-size: 1.4rem; }
-  #body #projects, #body #skills, #body #history, #body #contact {
+  #body #erreur, #body #projects, #body #skills, #body #history, #body #contact {
     display: flex;
     justify-content: center;
     align-items: center; }
-    #body #projects .container, #body #skills .container, #body #history .container, #body #contact .container {
+    #body #erreur .container, #body #projects .container, #body #skills .container, #body #history .container, #body #contact .container {
       width: 90%;
       height: 80%;
       min-height: 80vh;
       margin: 5% auto;
       background-color: rgba(255, 255, 255, 0.9);
       z-index: 1; }
-      #body #projects .container .title, #body #skills .container .title, #body #history .container .title, #body #contact .container .title {
+      #body #erreur .container .title, #body #projects .container .title, #body #skills .container .title, #body #history .container .title, #body #contact .container .title {
         padding-top: 50px; }
-        #body #projects .container .title h1, #body #skills .container .title h1, #body #history .container .title h1, #body #contact .container .title h1 {
+        #body #erreur .container .title h1, #body #projects .container .title h1, #body #skills .container .title h1, #body #history .container .title h1, #body #contact .container .title h1 {
           text-transform: uppercase;
           font-family: "Montserrat";
           margin: 20px auto;
           text-align: center;
           font-size: 3.4rem;
-          letter-spacing: 3px; }
-        #body #projects .container .title .divider, #body #skills .container .title .divider, #body #history .container .title .divider, #body #contact .container .title .divider {
+          letter-spacing: 3px;
+          font-weight: 400; }
+        #body #erreur .container .title .divider, #body #projects .container .title .divider, #body #skills .container .title .divider, #body #history .container .title .divider, #body #contact .container .title .divider {
           height: 2px;
           margin: auto;
           width: 60%; }
-      #body #projects .container .box, #body #skills .container .box, #body #history .container .box, #body #contact .container .box {
+        #body #erreur .container .title .dividerror, #body #projects .container .title .dividerror, #body #skills .container .title .dividerror, #body #history .container .title .dividerror, #body #contact .container .title .dividerror {
+          background: #B93A32; }
+      #body #erreur .container .box, #body #projects .container .box, #body #skills .container .box, #body #history .container .box, #body #contact .container .box {
         padding: 50px; }
-    #body #projects:nth-child(3) .divider, #body #skills:nth-child(3) .divider, #body #history:nth-child(3) .divider, #body #contact:nth-child(3) .divider {
+    #body #erreur:nth-child(3) .divider, #body #projects:nth-child(3) .divider, #body #skills:nth-child(3) .divider, #body #history:nth-child(3) .divider, #body #contact:nth-child(3) .divider {
       background: #92B6D5; }
-    #body #projects:nth-child(4) .divider, #body #skills:nth-child(4) .divider, #body #history:nth-child(4) .divider, #body #contact:nth-child(4) .divider {
+    #body #erreur:nth-child(4) .divider, #body #projects:nth-child(4) .divider, #body #skills:nth-child(4) .divider, #body #history:nth-child(4) .divider, #body #contact:nth-child(4) .divider {
       background: #8e81b1; }
-    #body #projects:nth-child(5) .divider, #body #skills:nth-child(5) .divider, #body #history:nth-child(5) .divider, #body #contact:nth-child(5) .divider {
+    #body #erreur:nth-child(5) .divider, #body #projects:nth-child(5) .divider, #body #skills:nth-child(5) .divider, #body #history:nth-child(5) .divider, #body #contact:nth-child(5) .divider {
       background: #DBB1CD; }
-    #body #projects:nth-child(6) .divider, #body #skills:nth-child(6) .divider, #body #history:nth-child(6) .divider, #body #contact:nth-child(6) .divider {
+    #body #erreur:nth-child(6) .divider, #body #projects:nth-child(6) .divider, #body #skills:nth-child(6) .divider, #body #history:nth-child(6) .divider, #body #contact:nth-child(6) .divider {
       background: #EC9787; }
 
 #menu .navbar {
@@ -269,16 +272,16 @@
           fill: #777bb3; }
         .cards .flip > .back p .mysqlicon:hover {
           fill: #e48e00; }
-        .cards .flip > .back p .symfony_icon:hover {
-          color: black; }
-        .cards .flip > .back p .html_icon:hover {
-          color: #e34c26; }
-        .cards .flip > .back p .css_icon:hover {
-          color: #264de4; }
-        .cards .flip > .back p .bs_icon:hover {
-          color: #563d7c; }
-        .cards .flip > .back p .js_icon:hover {
-          color: #f7df1e; }
+        .cards .flip > .back p .symfonyicon:hover {
+          fill: black; }
+        .cards .flip > .back p .htmlicon:hover {
+          fill: #e34c26; }
+        .cards .flip > .back p .cssicon:hover {
+          fill: #264de4; }
+        .cards .flip > .back p .bootstrapicon:hover {
+          fill: #563d7c; }
+        .cards .flip > .back p .javascripticon:hover {
+          fill: #f7df1e; }
       .cards .flip > .back a {
         text-decoration: none;
         color: white;
@@ -438,16 +441,16 @@
       fill: #d576a6; }
     .cards .flip > .back p .jqueryicon {
       fill: #88d5f6; }
-    .cards .flip > .back .html_icon {
-      color: #e55734; }
-    .cards .flip > .back .css_icon {
-      color: #3357e6; }
-    .cards .flip > .back .bs_icon {
-      color: #5f4389; }
-    .cards .flip > .back .js_icon {
-      color: #f7de22; }
-    .cards .flip > .back .symfony_icon {
-      color: black; }
+    .cards .flip > .back p .bootstrapicon {
+      fill: #5f4389; }
+    .cards .flip > .back p .htmlicon {
+      fill: #e55734; }
+    .cards .flip > .back p .cssicon {
+      fill: #3357e6; }
+    .cards .flip > .back p .javascripticon {
+      fill: #f7de22; }
+    .cards .flip > .back p .symfonyicon {
+      fill: black; }
 
   #skills .colonne .step .textSkill {
     visibility: visible; } }
@@ -521,5 +524,38 @@
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg); } }
+.ui.inverted.errorcolor.button {
+  color: #B93A32;
+  box-shadow: 0 0 0 2px #B93A32 inset !important; }
+  .ui.inverted.errorcolor.button:hover {
+    background-color: #B93A32;
+    box-shadow: none !important;
+    color: #fff; }
+
+.ui.tiny.modal img {
+  margin: auto; }
+
+#erreur .container .ui.inverted.errorcolor.button {
+  left: 5%;
+  margin-block-start: 5%; }
+#erreur .container .box {
+  text-align: center; }
+  #erreur .container .box #game {
+    margin: auto;
+    box-shadow: 0 0 0 2px #B93A32;
+    width: 40vw;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative; }
+    #erreur .container .box #game #mouse {
+      z-index: 999;
+      position: absolute;
+      width: 2rem; }
+    #erreur .container .box #game:hover {
+      cursor: url("../../assets/img/errorImg/cat.png"), auto; }
+#erreur #cat {
+  position: absolute;
+  z-index: 1000;
+  width: 3rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+ErrorDocument 401 /erreurs/erreur_404.html
+ErrorDocument 403 /erreurs/erreur_404.html
+ErrorDocument 404 /erreurs/erreur_404.html
+ErrorDocument 500 /erreurs/erreur_404.html
+ErrorDocument 503 /erreurs/erreur_404.html
+
+DirectoryIndex index.html /erreurs/erreur_404.html
+

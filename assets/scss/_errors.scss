@@ -1,0 +1,46 @@
+.ui.inverted.errorcolor.button {
+    color: #B93A32;
+    box-shadow: 0 0 0 2px #B93A32 inset!important;
+    &:hover {
+        background-color: #B93A32;
+        box-shadow: none!important;
+        color: #fff;
+    }
+}
+.ui.tiny.modal {
+    img {
+        margin: auto;
+    }
+}
+#erreur {
+    .container {
+        .ui.inverted.errorcolor.button {
+            left: 5%;
+            margin-block-start: 5%;
+        }
+        .box {
+            text-align: center;
+            #game {
+                margin: auto;
+                box-shadow: 0 0 0 2px #B93A32;
+                width: 40vw;
+                height: 40vh;
+                background: rgba($color: black, $alpha: 0.8);
+                position:relative;
+                #mouse {
+                    z-index: 999;
+                    position:absolute;
+                    width: 2rem;
+                }
+                &:hover {
+                    cursor: url('../../assets/img/errorImg/cat.png'), auto;
+                }
+            }
+        }
+    }
+    #cat {
+        position: absolute; 
+        z-index: 1000;
+        width: 3rem;
+    }
+}

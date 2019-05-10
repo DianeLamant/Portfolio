@@ -23,7 +23,7 @@
     p {
         font-size: 1.4rem;
     }
-    #projects, #skills, #history, #contact {
+    #erreur, #projects, #skills, #history, #contact {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,11 +43,15 @@
                     text-align: center;
                     font-size: 3.4rem;
                     letter-spacing: 3px;
+                    font-weight: 400;
                 }
                 .divider {
                     height: 2px;
                     margin: auto;
                     width: 60%;
+                }
+                .dividerror {
+                    background: $error;
                 }
             }
             .box {
