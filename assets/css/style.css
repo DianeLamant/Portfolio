@@ -347,7 +347,7 @@
     #contact .container .box .all_contacts .colonne .way_to_contact {
       display: flex;
       flex-direction: column;
-      justify-content: space-around; }
+      justify-content: space-evenly; }
       #contact .container .box .all_contacts .colonne .way_to_contact img {
         width: 2rem;
         margin-right: 20px;
@@ -379,11 +379,13 @@
     font-size: 3.5em; }
   #body #head .fdBlanc h3 {
     font-size: 3em; }
-  #body #contact .container .box .all_contacts {
-    height: 50vh; }
-    #body #contact .container .box .all_contacts .colonne {
-      height: auto;
+  #body #contact .container .box .all_contacts .colonne {
+    height: auto;
+    justify-content: initial; }
+    #body #contact .container .box .all_contacts .colonne .way_to_contact {
       justify-content: initial; }
+      #body #contact .container .box .all_contacts .colonne .way_to_contact p, #body #contact .container .box .all_contacts .colonne .way_to_contact a {
+        padding-bottom: 3rem; }
 
   .cards .flip {
     margin: 2rem 0rem; }

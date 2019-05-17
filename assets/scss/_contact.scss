@@ -10,7 +10,7 @@
                     .way_to_contact {
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-around;
+                        justify-content: space-evenly;
                         img {
                             width: 2rem;
                             margin-right: 20px;
@@ -27,6 +27,7 @@
                             text-decoration: none;
                             font-size: 1.5rem;
                         }
+                        
                     }
                 }
             }

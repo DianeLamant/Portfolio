@@ -38,10 +38,15 @@
             .container {
                 .box {
                     .all_contacts {
-                        height: 50vh;
                         .colonne {
                             height: auto;
                             justify-content: initial;
+                            .way_to_contact {
+                                justify-content: initial;
+                                p, a {
+                                    padding-bottom: 3rem;
+                                }
+                            }
                         }
                     }
                 }
